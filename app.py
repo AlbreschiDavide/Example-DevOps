@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup #dependecy
 
-page = requests.get("https://www.google.com")
-soup = BeautifulSoup(page.content, "html.parser")
-print (soup.title.string)
+def get_title(URL):
+    page = requests.get(URL)
+    soup = BeautifulSoup(page.content, "html.parser")
+    return soup.title.string
