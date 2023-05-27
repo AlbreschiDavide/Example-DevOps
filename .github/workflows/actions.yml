@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - name: build
+      #- name: build
       #script: echo "Hello Word"
-      - run: echo "Hello Word"
+      run: echo "Hello Word"
 
   # test-job:
   #   image:
