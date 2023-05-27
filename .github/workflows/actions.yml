@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - name: build
+      #- name: build
       - uses: actions/checkout@v3
       #script: echo "Hello Word"
       - run: echo "Hello Word"
