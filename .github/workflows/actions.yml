@@ -10,20 +10,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         #script: echo "Hello Word"
-      - name: Run
+      - name: Run Echo
         run: echo "Hello Word"
 
-  # test:
-  #   image:
-  #   steps: 
-  #     #- name: test
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #     #- image: python
-  #     - run: pip install -r requirements.txt
-  #     # script:
-  #     # - pytest
-  #     - run: pytest
+  test:
+    # image: python
+    container: python
+    steps: 
+      #- name: test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      #- image: python
+      - run: pip install -r requirements.txt
+      # script:
+      # - pytest
+      - run: pytest
 
   # delivery-job:
   #   steps: 
