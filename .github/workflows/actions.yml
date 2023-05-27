@@ -7,16 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      #- name: build
-      - uses: actions/checkout@v3
-      #script: echo "Hello Word"
-      - run: echo "Hello Word"
+      - name: Build non serve in in githu
+        uses: actions/checkout@v3
+        #script: echo "Hello Word"
+        run: echo "Hello Word"
 
-  # test-job:
+  # test:
   #   image:
   #   steps: 
-  #     - name: test
-  #     - image: python
+  #     #- name: test
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #     #- image: python
   #     - run: pip install -r requirements.txt
   #     # script:
   #     # - pytest
