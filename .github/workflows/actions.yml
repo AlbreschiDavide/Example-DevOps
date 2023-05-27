@@ -7,9 +7,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - name: Build non serve in in githu
+      - name: Checkout
         uses: actions/checkout@v3
         #script: echo "Hello Word"
+      - name: Run
         run: echo "Hello Word"
 
   # test:
